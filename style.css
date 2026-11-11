@@ -149,6 +149,7 @@ nav.top a:hover { opacity: 1; }
 .gallery figcaption { text-align: center; margin-top: 14px; font-size: 15px; color: var(--muted); }
 .gallery .window { cursor: zoom-in; }
 .gallery-2 { grid-template-columns: repeat(2, 1fr); margin-top: 28px; }
+.gallery-row-2 { margin-top: 28px; }
 @media (max-width: 900px) { .gallery, .gallery-2 { grid-template-columns: 1fr; } }
 
 /* ---- cards ---- */
@@ -160,6 +161,15 @@ nav.top a:hover { opacity: 1; }
 .card .icon { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; margin-bottom: 16px;
   background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); }
 .card .icon svg { width: 21px; height: 21px; }
+
+/* ---- signal analysis ---- */
+#analysis .window { margin-top: 8px; cursor: zoom-in; }
+.points { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 32px; }
+@media (max-width: 980px) { .points { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .points { grid-template-columns: 1fr; } }
+.points h3 { font-size: 16px; padding-top: 14px; border-top: 2px solid var(--line); }
+.points p { color: var(--muted); font-size: 15px; }
+.points code { font-size: 0.88em; }
 
 /* ---- RF spotlight / demo ---- */
 .rf { display: grid; grid-template-columns: 0.78fr 1.22fr; gap: 52px; align-items: center; }
@@ -279,5 +289,7 @@ dialog.lightbox img { border-radius: 10px; max-height: 90vh; width: auto; margin
 .groups > div:nth-child(1) h3::before { background: var(--c-blue); }   .groups > div:nth-child(2) h3::before { background: var(--c-amber); }
 .groups > div:nth-child(3) h3::before { background: var(--c-green); }  .groups > div:nth-child(4) h3::before { background: var(--c-pink); }
 .groups > div:nth-child(5) h3::before { background: var(--c-violet); } .groups > div:nth-child(6) h3::before { background: var(--c-teal); }
+.points > div:nth-child(1) h3 { border-color: var(--c-blue); }   .points > div:nth-child(2) h3 { border-color: var(--c-violet); }
+.points > div:nth-child(3) h3 { border-color: var(--c-green); }  .points > div:nth-child(4) h3 { border-color: var(--c-amber); }
 #beta .button { background: linear-gradient(135deg, var(--g1), var(--g2)); color: #fff; }
 .steps li::before { background: linear-gradient(135deg, var(--g1), var(--g2)); color: #fff; border: none; }

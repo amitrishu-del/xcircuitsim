@@ -1,7 +1,8 @@
 # Xcircuitsim website
 
 The website for [Xcircuitsim](https://amitrishu-del.github.io/xcircuitsim/), a circuit simulator for macOS:
-power electronics, analog and RF, with transmission lines, S-parameters and a Smith chart.
+power electronics, analog and RF, with harmonic, power and loss analysis, transmission lines,
+S-parameters and a Smith chart.
 
 Plain HTML, CSS and JavaScript, served by GitHub Pages; no build step.
 
